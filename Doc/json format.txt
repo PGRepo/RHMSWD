@@ -1,0 +1,81 @@
+User Collection:
+{
+	_id:""
+	email_id:""
+	first_name:""
+	last_name:""
+	address:""
+	contact_number:""
+	emergency_contact_number:""
+	age:""
+	gender:""
+	weight:""
+	nationality:""
+
+}
+
+User_Data Collection:
+
+
+Using Java (Just prototype):
+
+{
+	_id:""
+	email_id:""
+	latitude: ""
+	longitude: ""
+	time_stamp: ""
+	data:{
+			heart_rate:""
+		}
+
+
+	}	
+
+
+
+
+Using  Spark:
+
+
+{
+	_id:""
+	email_id:""
+	data:{
+			heart_rate:{0:97,1:78....59:80}
+			avg_heart_rate: xx
+			latitude: ""
+			longitude: ""
+			time_stamp: ""
+		}
+
+
+}
+
+
+			||  OR ||
+			
+			
+		This can be Prefered method due to below reasons:
+		
+		allows to get location on time stamp and vice versa in single operation.......
+		partition can be done on based of timestamp and location can be done
+		refer to data only when yo need heart rate......
+		
+			
+	{
+	_id:""
+	email_id:""
+	latitude: ""
+	longitude: ""
+	time_stamp: ""
+	data:{
+			heart_rate:{0:97,1:78....59:80}
+			avg_heart_rate: xx
+		}
+
+
+	}		
+			
+			
+
